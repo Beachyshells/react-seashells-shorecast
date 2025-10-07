@@ -6,15 +6,16 @@ import SearchField from "./SearchField/SearchField";
 
 export default function Form() {
   const [city, setCity] = useState("");
-  const apiKey = "445905dadb3d2b0c6f1b916c9d0e3860";
+  const apiKey = "53f3bc1f5d348c44be3e3754c7185573";
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleCityChange(event) {
     setCity(event.target.value);
   }
   function handleGeoResponse(response) {
     const { lat, lon } = response.data.coord;
-    const oneCallApiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-    axios.get(oneCallApiUrl).then(handleResponse);
+    const forecastApiKey = "b9aaeaaf97004f2a03afob830bt63baf";
+    const forecastApiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${lat}&lon=${lon}&key=${forecastApiKey}&units=metric`;
+    axios.get(forecastApiUrl).then(handleResponse);
   }
 
   function apiSearch() {
