@@ -1,0 +1,27 @@
+.SearchField {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.SearchField input[type="search"] {
+  width: 70%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--font-family-body);
+}
+
+.SearchField input[type="submit"] {
+  width: 20%;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.SearchField input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}

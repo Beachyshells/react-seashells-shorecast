@@ -1,0 +1,17 @@
+.DailyWeather {
+  border-bottom: 2px solid #dee2e6;
+  margin-bottom: 10px;
+  padding: 20px 0;
+}
+
+.DailyWeather .temperature {
+  font-size: 64px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.DailyWeather .units {
+  font-size: 1.5rem;
+  position: relative;
+  top: -24px;
+}

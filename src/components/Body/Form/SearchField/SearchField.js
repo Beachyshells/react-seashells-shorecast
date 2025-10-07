@@ -1,3 +1,4 @@
+import "./SearchField.css";
 export default function SearchField(props) {
   return (
     <div className="SearchField">
@@ -7,7 +8,7 @@ export default function SearchField(props) {
         onChange={props.onCityChange}
         value={props.city}
       />
-      <input type="submit" value="Search" />
+      <input className="button" type="submit" value="Search" />
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import "./DailyWeather.css";
+
 export default function DailyWeather(props) {
   console.log(props.data);
 
