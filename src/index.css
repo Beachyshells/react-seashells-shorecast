@@ -1,1 +1,28 @@
+:root {
+  /*Colors*/
+  --primary-color: #4d5a12;
+  --secondary-color: #6d660b;
+  --text-color: #262d04;
+  --background-color: #f4f7f9;
+  --container-background: #adc7d4;
 
+  /*Typography*/
+  --font-family-heading: "Luckiest Guy", cursive;
+  --font-family-body: "Parkinson", sans-serif;
+
+  /*Style*/
+  --border-radius: 8px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.parkinsans {
+  font-family: "Parkinsans", sans-serif;
+
+  font-weight: 400;
+}

@@ -1,0 +1,7 @@
+.app-wrapper {
+  max-width: 80%;
+  background-color: var(--container-background);
+  padding: 30px;
+  margin: 10px auto;
+  border-radius: 4px;
+}

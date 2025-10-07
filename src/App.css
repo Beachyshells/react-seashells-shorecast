@@ -1,4 +1,9 @@
 .App {
   max-width: 800px;
+  height: 100vh;
   text-align: center;
+  background-image: url("../public/images/app-background.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: var(--font-family-body);
 }
