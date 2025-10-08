@@ -12,3 +12,7 @@
   color: var(--primary-color);
   margin: 0;
 }
+.error-message {
+  color: var(--primary-color);
+  font-family: var(--font-family-body);
+}
