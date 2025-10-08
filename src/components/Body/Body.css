@@ -1,5 +1,6 @@
 .app-wrapper {
   max-width: 80%;
+  min-width: 60%;
   background-color: var(--container-background);
   padding: 30px;
   margin: 10px auto;

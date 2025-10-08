@@ -29,7 +29,7 @@ export default function Form() {
   }
   function handleSearch(event) {
     event.preventDefault();
-    alert(`Searching for ${city}`);
+
     apiSearch();
   }
 
@@ -44,7 +44,7 @@ export default function Form() {
     <div className="Form">
       <form onSubmit={handleSearch}>
         <SearchField city={city} onCityChange={handleCityChange} />
-        <p className="loading">Searching for weather in {city}</p>
+        <p className="loading">Searching for weather in... {city}</p>
         <Weather data={weatherData} />
       </form>
     </div>

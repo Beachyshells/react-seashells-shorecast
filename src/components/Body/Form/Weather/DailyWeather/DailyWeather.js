@@ -27,10 +27,12 @@ export default function DailyWeather(props) {
             <li className="humidity-wind">Wind: {wind} mph</li>
           </ul>
         </div>
-        <div className="col-6">
+        <div className="col-6 d-flex align-items-center justify-content-end">
           <img src={iconUrl} alt={description} className="weather-icon" />
-          <span className="temperature">{temperature}</span>
-          <span className="units">°C</span>
+          <div className="temperature-container">
+            <span className="temperature">{temperature}</span>
+            <span className="units">°C</span>
+          </div>
         </div>
       </div>
     </div>

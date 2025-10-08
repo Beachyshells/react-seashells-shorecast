@@ -3,15 +3,20 @@
   margin-bottom: 10px;
   padding: 20px 0;
 }
-
-.DailyWeather .temperature {
-  font-size: 4rem;
-  font-weight: bold;
+.DailyWeather .weather-icon {
+  width: 64px;
+  height: 64px;
+}
+.DailyWeather .temperature-container {
   margin-left: 10px;
+}
+.DailyWeather .temperature {
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 .DailyWeather .units {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: relative;
   top: -24px;
 }
@@ -38,4 +43,18 @@
 
 .humidity-wind {
   font-size: 14px;
+}
+@media (min-width: 768px) {
+  .DailyWeather .weather-icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .DailyWeather .temperature {
+    font-size: 4rem;
+  }
+
+  .DailyWeather .units {
+    font-size: 1.2rem;
+  }
 }
