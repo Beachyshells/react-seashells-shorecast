@@ -2,11 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 10px;
+  padding: 0 10px;
   background-color: rgba(248, 249, 250, 0.8);
   border-bottom: 1px solid #eee;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+.WeatherForecastDay:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
 }
 .WeatherForecastDay .day {
   font-size: 1rem;
@@ -15,8 +20,8 @@
   margin-bottom: 5px;
 }
 .WeatherForecastDay .forecast-icon {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin: 5px 0;
 }
 
@@ -25,6 +30,7 @@
   margin-left: 5px;
   font-size: 13px;
   font-weight: 400;
+  opacity: 0.7;
 }
 .WeatherForecastDay .temperature-max {
   color: var(--temperature-hot);
@@ -37,14 +43,5 @@
     flex-direction: column;
     padding: 15px;
     border: none;
-    border-radius: var(--border-radius);
-    background-color: var(--container-background);
-    box-shadow: var(--box-shadow);
-  }
-
-  .WeatherForecastDay .forecast-icon {
-    width: 50px;
-    height: 50px;
-    margin: 10px 0;
   }
 }

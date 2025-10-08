@@ -3,14 +3,7 @@
   flex-direction: column;
   max-width: 800px;
   margin: 3rem auto;
-  padding: 30px;
+  padding: 120px;
   min-height: 70vh;
   border-radius: 4px;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
-    ),
-    url("../public/images/app-background.jpg");
-  background-size: cover;
-  background-position: center;
 }

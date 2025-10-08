@@ -28,3 +28,12 @@
 
   font-weight: 400;
 }
+body {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../public/images/app-background.jpg");
+  background-size: cover;
+  background-position: center;
+}

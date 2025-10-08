@@ -2,15 +2,24 @@
   color: white;
   letter-spacing: 1.5px;
   text-align: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
-
+.app-header {
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(221, 235, 246, 0.8);
+  backdrop-filter: blur(5px);
+}
 .title {
   font-family: var(--font-family-heading);
-  font-size: 64px;
+  font-size: 2rem;
 }
 .sub-title {
   font-family: var(--font-family-body);
-  font-size: 28px;
+  font-size: 1.3rem;
   font-weight: 600;
 }
