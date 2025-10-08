@@ -19,7 +19,7 @@ export default function DailyWeather(props) {
   const formattedDate = formatDate();
   return (
     <div className="DailyWeather">
-      <div className="row align-items-center">
+      <div className="row align-items-end align-items-md-center">
         <div className="col-6">
           <p className="city-name">{cityName}</p>
           <div className="date">{formattedDate}</div>
@@ -31,7 +31,7 @@ export default function DailyWeather(props) {
         </div>
         <div className="col-6 d-flex align-items-center justify-content-end">
           <img src={iconUrl} alt={description} className="weather-icon" />
-          <div className="temperature-container">
+          <div className="temperature-container ">
             <span className="temperature">{temperature}</span>
             <span className="units">°C</span>
           </div>
