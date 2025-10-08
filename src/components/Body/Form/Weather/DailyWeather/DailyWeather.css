@@ -27,7 +27,17 @@
   margin: 0;
   color: var(--primary-color);
 }
-
+.DailyWeather .description {
+  background-color: rgba(108, 117, 125, 0.1);
+  display: inline-block;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  padding: 4px;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
 .details {
   margin: 0;
   list-style: none;

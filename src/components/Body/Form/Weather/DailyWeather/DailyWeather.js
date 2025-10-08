@@ -24,7 +24,7 @@ export default function DailyWeather(props) {
           <p className="city-name">{cityName}</p>
           <div className="date">{formattedDate}</div>
           <ul className="details">
-            <li>~ {description} ~</li>
+            <li className="description"> {description} </li>
             <li className="humidity-wind mt-2">Humidity: {humidity}%</li>
             <li className="humidity-wind">Wind: {wind} mph</li>
           </ul>
