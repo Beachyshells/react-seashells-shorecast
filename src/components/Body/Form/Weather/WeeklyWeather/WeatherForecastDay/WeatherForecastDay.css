@@ -3,9 +3,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 10px;
-  background-color: var(--container-background);
+  background-color: rgba(248, 249, 250, 0.8);
   border-bottom: 1px solid #eee;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 .WeatherForecastDay .day {
   font-size: 1rem;

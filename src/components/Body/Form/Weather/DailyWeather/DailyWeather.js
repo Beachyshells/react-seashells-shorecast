@@ -20,7 +20,7 @@ export default function DailyWeather(props) {
   return (
     <div className="DailyWeather">
       <div className="row align-items-end align-items-md-center">
-        <div className="col-6">
+        <div className="col-md-6 text-center text-md-start">
           <p className="city-name">{cityName}</p>
           <div className="date">{formattedDate}</div>
           <ul className="details">
@@ -29,7 +29,7 @@ export default function DailyWeather(props) {
             <li className="humidity-wind">Wind: {wind} mph</li>
           </ul>
         </div>
-        <div className="col-6 d-flex align-items-center justify-content-end">
+        <div className="col-md-6 d-flex align-items-center justify-content-center">
           <img src={iconUrl} alt={description} className="weather-icon" />
           <div className="temperature-container ">
             <span className="temperature">{temperature}</span>
