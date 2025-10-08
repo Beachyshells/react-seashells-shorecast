@@ -5,7 +5,7 @@
 }
 
 .DailyWeather .temperature {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: bold;
   margin-left: 10px;
 }
@@ -14,4 +14,28 @@
   font-size: 1.5rem;
   position: relative;
   top: -24px;
+}
+
+.DailyWeather .city-name {
+  font-family: var(--font-family-heading);
+  font-size: 2rem;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.details {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+.date {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.humidity-wind {
+  font-size: 14px;
 }

@@ -44,8 +44,7 @@ export default function Form() {
     <div className="Form">
       <form onSubmit={handleSearch}>
         <SearchField city={city} onCityChange={handleCityChange} />
-
-        <p>Searching for weather in {city}</p>
+        <p className="loading">Searching for weather in {city}</p>
         <Weather data={weatherData} />
       </form>
     </div>

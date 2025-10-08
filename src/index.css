@@ -5,6 +5,8 @@
   --text-color: #262d04;
   --background-color: #f4f7f9;
   --container-background: #adc7d4;
+  --temperature-hot: rgb(237, 42, 7);
+  --temperature-cold: rgb(5, 111, 193);
 
   /*Typography*/
   --font-family-heading: "Luckiest Guy", cursive;

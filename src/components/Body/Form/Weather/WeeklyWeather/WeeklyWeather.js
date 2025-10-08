@@ -6,7 +6,7 @@ export default function WeeklyWeather(props) {
   }
   return (
     <div className="WeeklyWeather">
-      <div className="row">
+      <div className="row row-cols-1 row-cols-lg-5 g-3">
         {props.forecast.slice(1, 6).map(function (day, index) {
           return (
             <div className="col" key={index}>
