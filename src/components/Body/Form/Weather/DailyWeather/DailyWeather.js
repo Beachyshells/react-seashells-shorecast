@@ -1,12 +1,14 @@
 import "./DailyWeather.css";
+import { DateTime } from "luxon";
 
 export default function DailyWeather(props) {
-  console.log(props.data);
+  console.log("DailyWeather props:", props);
 
   function formatDate() {
-    let date = new Date(props.data.time * 1000);
-    let options = { weekday: "long", hour: "2-digit", minute: "2-digit" };
-    return date.toLocaleTimeString("en-US", options);
+    const timezoneOffset = props.timezone;
+    const nowInUTC = DateTime.utc();
+    const localTime = nowInUTC.plus({ seconds: timezoneOffset });
+    return localTime.toFormat("ccc, h:mm a");
   }
   const temperature = Math.round(props.data.temperature.day);
   const humidity = props.data.temperature.humidity;

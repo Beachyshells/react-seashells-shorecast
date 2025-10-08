@@ -11,6 +11,7 @@ export default function Weather(props) {
         <DailyWeather
           data={fullWeatherData.daily[0]}
           city={fullWeatherData.city}
+          timezone={fullWeatherData.timezone}
         />
         <WeeklyWeather forecast={fullWeatherData.daily} />{" "}
       </div>

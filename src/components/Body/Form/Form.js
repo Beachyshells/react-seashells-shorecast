@@ -13,19 +13,17 @@ export default function Form() {
   }
   function handleGeoResponse(response) {
     const { lat, lon } = response.data.coord;
+    const timezone = response.data.timezone;
     const forecastApiKey = "b9aaeaaf97004f2a03afob830bt63baf";
     const forecastApiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${lat}&lon=${lon}&key=${forecastApiKey}&units=metric`;
-    axios.get(forecastApiUrl).then(handleResponse);
+    axios.get(forecastApiUrl).then(function (forecastResponse) {
+      handleResponse(forecastResponse, timezone);
+    });
   }
 
   function apiSearch() {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios
-      .get(apiUrl)
-      .then(handleGeoResponse)
-      .catch(function (error) {
-        console.error("DEBUG: API call failed. Here is the error:", error);
-      });
+    axios.get(apiUrl).then(handleGeoResponse);
   }
   function handleSearch(event) {
     event.preventDefault();
@@ -33,7 +31,9 @@ export default function Form() {
     apiSearch();
   }
 
-  function handleResponse(response) {
+  function handleResponse(response, timezone) {
+    console.log("DEBUG: Final SheCodes API Response:", response.data);
+    response.data.timezone = timezone;
     setWeatherData({
       ready: true,
       data: response.data,
