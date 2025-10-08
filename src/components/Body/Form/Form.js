@@ -39,14 +39,24 @@ export default function Form() {
       data: response.data,
     });
   }
-
   return (
     <div className="Form">
       <form onSubmit={handleSearch}>
         <SearchField city={city} onCityChange={handleCityChange} />
-        <p className="loading">Searching for weather in... {city}</p>
-        <Weather data={weatherData} />
       </form>
+      {weatherData.ready ? (
+        <Weather data={weatherData} />
+      ) : (
+        <div>
+          {city ? (
+            <p className="loading">Consulting the Seagulls in {city}...</p>
+          ) : (
+            <p className="loading">
+              Cast a line for your city's shorecast... {city}
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 }

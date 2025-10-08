@@ -1,4 +1,14 @@
+.message-container {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .loading {
   text-align: center;
   font-family: var(--font-family-body);
+  color: var(--primary-color);
+  margin: 0;
 }
