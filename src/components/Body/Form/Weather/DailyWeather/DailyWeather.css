@@ -7,9 +7,7 @@
   width: 100px;
   height: 100px;
 }
-.DailyWeather .temperature-container {
-  margin-left: 10px;
-}
+
 .DailyWeather .temperature {
   font-size: 3.5rem;
   font-weight: bold;
@@ -65,8 +63,8 @@
 }
 @media (min-width: 768px) {
   .DailyWeather .weather-icon {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
   }
 
   .DailyWeather .temperature {
@@ -74,7 +72,7 @@
   }
 
   .DailyWeather .units {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .DailyWeather .city-name {
     font-size: 2rem;
