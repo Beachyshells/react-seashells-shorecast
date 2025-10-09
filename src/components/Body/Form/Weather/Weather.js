@@ -12,8 +12,10 @@ export default function Weather(props) {
           data={fullWeatherData.daily[0]}
           city={fullWeatherData.city}
           timezone={fullWeatherData.timezone}
+          unit={props.unit}
+          setUnit={props.setUnit}
         />
-        <WeeklyWeather forecast={fullWeatherData.daily} />{" "}
+        <WeeklyWeather forecast={fullWeatherData.daily} unit={props.unit} />{" "}
       </div>
     );
   } else {

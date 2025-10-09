@@ -7,6 +7,7 @@ import SearchField from "./SearchField/SearchField";
 export default function Form() {
   const [city, setCity] = useState("");
   const [error, setError] = useState(null);
+  const [unit, setUnit] = useState("celsius");
   const apiKey = "53f3bc1f5d348c44be3e3754c7185573";
   const [weatherData, setWeatherData] = useState({ ready: false });
   /* */
@@ -67,7 +68,7 @@ export default function Form() {
         if (error) {
           return <div className="error-message">{error}</div>;
         } else if (weatherData.ready) {
-          return <Weather data={weatherData} />;
+          return <Weather data={weatherData} unit={unit} setUnit={setUnit} />;
         } else {
           return (
             <div className="message-container">

@@ -1,9 +1,9 @@
 .app-wrapper {
   max-width: 80%;
   min-width: 60%;
+  height: 100%;
   background-color: var(--container-background);
-  padding: 30px;
-  margin: 10px auto;
-  border-radius: 8px;
+
   opacity: 0.9;
+  margin: 0 auto;
 }

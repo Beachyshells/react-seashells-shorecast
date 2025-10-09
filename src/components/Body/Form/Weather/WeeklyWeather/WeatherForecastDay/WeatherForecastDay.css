@@ -1,4 +1,5 @@
 .WeatherForecastDay {
+  height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +9,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   transition: all 200ms ease-in-out;
+  font-family: var(--font-family-body);
 }
 .WeatherForecastDay:hover {
   transform: scale(1.1);
@@ -20,8 +22,8 @@
   margin-bottom: 5px;
 }
 .WeatherForecastDay .forecast-icon {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin: 5px 0;
 }
 
@@ -43,5 +45,6 @@
     flex-direction: column;
     padding: 15px;
     border: none;
+    height: fit-content;
   }
 }

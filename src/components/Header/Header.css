@@ -10,16 +10,26 @@
   top: 0;
   left: 0;
   width: 100%;
+  max-height: 200px;
   z-index: 1000;
   background-color: rgba(221, 235, 246, 0.8);
   backdrop-filter: blur(5px);
 }
 .title {
   font-family: var(--font-family-heading);
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 .sub-title {
   font-family: var(--font-family-body);
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   font-weight: 600;
+  padding: 0 5px;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 4rem !important;
+  }
+  .sub-title {
+    font-size: 1.5rem;
+  }
 }
