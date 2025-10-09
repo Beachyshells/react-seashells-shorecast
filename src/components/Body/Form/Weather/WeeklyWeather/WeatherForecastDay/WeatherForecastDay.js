@@ -7,13 +7,7 @@ export default function WeatherForecastDay(props) {
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     return days[day];
   }
-  function maxFahrenheit() {
-    return Math.round((props.data.temperature.maximum * 9) / 5 + 32);
-  }
 
-  function minFahrenheit() {
-    return Math.round((props.data.temperature.minimum * 9) / 5 + 32);
-  }
   const maxFahrenheitTemperature = Math.round(
     (props.data.temperature.maximum * 9) / 5 + 32
   );
