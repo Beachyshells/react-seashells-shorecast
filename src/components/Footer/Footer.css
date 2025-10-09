@@ -3,7 +3,7 @@
   text-align: center;
   margin-top: 5px;
   padding-top: 20px;
-  color: white;
+  color: var(--text-color);
   font-family: var(--font-family-body);
 }
 .Footer p {
@@ -11,8 +11,9 @@
 }
 .Footer a {
   text-decoration: none;
-  color: white;
+  color: var(--link-color);
 }
 .Footer a:hover {
   text-decoration: underline;
+  color: #bdedf4;
 }

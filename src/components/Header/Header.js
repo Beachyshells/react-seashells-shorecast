@@ -1,9 +1,12 @@
 import "./Header.css";
-export default function Header() {
+export default function Header(props) {
   return (
-    <div className="Header app-header fs-5">
-      <h1 className="title">SeaShell's Shorecast</h1>
+    <div className="Header app-header">
+      <h1 className="title header-title">SeaShell's Shorecast</h1>
       <p className="sub-title">Local Lakeside Weather- it's a shorething</p>
+      <button onClick={props.toggleTheme} className="theme-toggle">
+        {props.theme === "light" ? "🌙" : "☀️"}
+      </button>
     </div>
   );
 }

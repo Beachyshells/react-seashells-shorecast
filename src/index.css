@@ -2,11 +2,27 @@
   /*Colors*/
   --primary-color: #4d5a12;
   --secondary-color: #6d660b;
-  --text-color: #262d04;
+  --text-color: #f5f6f1;
   --background-color: #f4f7f9;
-  --container-background: #adc7d4;
+  --container-background: #c6d8e7cc;
+  --pill-background: #f2f8dfcc;
   --temperature-hot: rgb(237, 42, 7);
   --temperature-cold: rgb(5, 111, 193);
+  --link-color: #0b6974;
+  --background-overlay: rgba(0, 0, 0, 0);
+  /*Dark Mode colors*/
+  .dark {
+    --primary-color: #aac240;
+    --secondary-color: #f2e463;
+    --text-color: #e2e8f0;
+    --background-color: #1a202c;
+    --container-background: #2d3748;
+    --pill-background: #3a4b2e99;
+    --temperature-hot: #ff5252;
+    --temperature-cold: #4fc3f7;
+    --link-color: #81e8f8;
+    --background-overlay: rgba(0, 0, 0, 1.2);
+  }
 
   /*Typography*/
   --font-family-heading: "Luckiest Guy", cursive;
@@ -30,11 +46,10 @@
 }
 body {
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
+      var(--background-overlay),
+      var(--background-overlay)
     ),
     url("../public/images/app-background.jpg");
   background-size: cover;
   background-position: center;
-  align-items: center;
 }
