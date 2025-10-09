@@ -52,4 +52,5 @@ body {
     url("../public/images/app-background.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
