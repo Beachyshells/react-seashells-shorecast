@@ -10,7 +10,7 @@ export default function WeeklyWeather(props) {
         {props.forecast.slice(1, 6).map(function (day, index) {
           return (
             <div className="col" key={index}>
-              <WeatherForecastDay data={day} />
+              <WeatherForecastDay data={day} unit={props.unit} />
             </div>
           );
         })}
