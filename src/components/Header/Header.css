@@ -12,7 +12,7 @@
   width: 100%;
   max-height: 200px;
   z-index: 1000;
-  background-color: var(--container-background);
+  background-color: var(--heading-container-background);
   backdrop-filter: blur(5px);
 }
 .title {

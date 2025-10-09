@@ -5,15 +5,22 @@
   padding-top: 20px;
   color: var(--text-color);
   font-family: var(--font-family-body);
+  background-color: var(--heading-container-background);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
 }
-.Footer p {
-  color: #bdedf4;
-}
+
 .Footer a {
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--primary-color);
 }
 .Footer a:hover {
   text-decoration: underline;
-  color: #bdedf4;
+  color: var(--link-color);
+}
+.Footer p {
+  margin: 0;
 }
