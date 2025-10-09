@@ -10,8 +10,6 @@
   --temperature-hot: rgb(237, 42, 7);
   --temperature-cold: rgb(5, 111, 193);
   --link-color: #60bfee;
-  --background-overlay: rgba(0, 0, 0, 0);
-  /*Dark Mode colors*/
 
   /*Typography*/
   --font-family-heading: "Luckiest Guy", cursive;
@@ -21,6 +19,7 @@
   --border-radius: 8px;
   --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+/*Dark Mode colors*/
 .dark {
   --background-color: #2b2622;
   --container-background: #3c3631;
@@ -32,20 +31,8 @@
   --text-color: #e4e0d7;
   --temperature-hot: #c77e71;
   --temperature-cold: #5b86a4;
-  --background-overlay: rgba(0, 0, 0, 0);
 }
 
-.luckiest-guy-regular {
-  font-family: "Luckiest Guy", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.parkinsans {
-  font-family: "Parkinsans", sans-serif;
-
-  font-weight: 400;
-}
 body::before {
   content: "";
   background-image: url("../public/images/app-background.jpg");
@@ -58,7 +45,7 @@ body::before {
   background-position: center center;
   background-repeat: no-repeat;
   z-index: -1;
-  min-height: 100vh;
+
   transition: filter 0.4s ease-in-out;
 }
 body.dark::before {

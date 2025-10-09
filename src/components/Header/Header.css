@@ -1,35 +1,57 @@
 .Header {
-  color: white;
-  letter-spacing: 1.5px;
-  text-align: center;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 .app-header {
-  padding-top: 10px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 200px;
   z-index: 1000;
-  background-color: var(--heading-container-background);
-  backdrop-filter: blur(5px);
+  color: var(--text-color);
+  padding: 15px 20px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.header-content {
+  text-align: center;
+  grid-column: 2;
+}
+.header-spacer {
+  grid-column: 3;
 }
 .title {
   font-family: var(--font-family-heading);
   font-size: 2.6rem;
+  letter-spacing: 1.5px;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 .sub-title {
   font-family: var(--font-family-body);
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  padding: 0 5px;
+  margin: 0;
+  letter-spacing: 1.2px;
 }
-@media (min-width: 768px) {
-  .title {
-    font-size: 4rem !important;
-  }
+
+.theme-toggle {
+  grid-column: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 3rem;
+  justify-self: end;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.2s ease-in-out;
+}
+.theme-toggle:hover {
+  color: yellow;
+}
+@media (max-width: 500px) {
   .sub-title {
-    font-size: 1.5rem;
+    display: none;
   }
 }
