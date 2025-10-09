@@ -1,3 +1,4 @@
+import { FaSun, FaMoon } from "react-icons/fa";
 import "./Header.css";
 export default function Header(props) {
   return (
@@ -6,7 +7,7 @@ export default function Header(props) {
       <div className="d-flex justify-content-center">
         <p className="sub-title">Local Lakeside Weather- it's a shorething</p>
         <button onClick={props.toggleTheme} className="theme-toggle">
-          {props.theme === "light" ? "🌙" : "☀️"}
+          {props.theme === "light" ? <FaMoon /> : <FaSun />}
         </button>
       </div>
     </div>
