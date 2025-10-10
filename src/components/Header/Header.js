@@ -4,7 +4,7 @@ export default function Header(props) {
   return (
     <div className="Header app-header">
       <button onClick={props.toggleTheme} className="theme-toggle">
-        {props.theme === "light" ? <FaMoon /> : <FaSun />}
+        {props.theme === "light" ? <FaSun /> : <FaMoon />}
       </button>
       <div className="header-content">
         <h1 className="title header-title">SeaShell's Shorecast</h1>
