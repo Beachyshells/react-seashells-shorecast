@@ -8,7 +8,7 @@ export default function Header(props) {
       </button>
       <div className="header-content">
         <h1 className="title header-title">SeaShell's Shorecast</h1>
-        <p className="sub-title">Local Lakeside Weather- it's a shorething</p>
+        <p className="sub-title">Local Lakeside Weather- it's a Shorething</p>
       </div>
       <div></div>{" "}
     </div>
