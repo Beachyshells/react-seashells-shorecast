@@ -23,7 +23,7 @@ export default function Footer() {
         </a>{" "}
         and hosted on{" "}
         <a
-          href="YOUR_NETLIFY_SITE_LINK_HERE"
+          href="https://phenomenal-puffpuff-3d0c89.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
