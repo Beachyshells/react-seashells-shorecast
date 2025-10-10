@@ -49,5 +49,5 @@ body::before {
   transition: filter 0.4s ease-in-out;
 }
 body.dark::before {
-  filter: brightness(60%);
+  filter: brightness(30%) saturate(80%);
 }
